@@ -12,4 +12,4 @@ ADD autopdf.sh /work/
 
 ADD index.html /server/
 
-CMD ["/bin/sh","-c","livereloadx -s /server && sh -c 'cd /work/ && ./autopdf.sh'"]
+CMD ["/bin/sh","-c","livereloadx -s /server & sh -c 'cd /work/ && ./autopdf.sh'"]
