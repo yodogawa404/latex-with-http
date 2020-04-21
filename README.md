@@ -1,5 +1,3 @@
-# latex-with-autorefresh
+# latex-with-http
 ## これは何
-
-latexをpdfに出力してchromeから自動リロードするための環境。  
-後日ドキュメントとか整備します。
+自分用のlatex環境
