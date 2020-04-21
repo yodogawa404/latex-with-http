@@ -6,12 +6,15 @@ SERVER_DIR="/server"
 
 compile() {
   platex $NAME.tex
-  dvipdfmx $NAME.dvi $SERVER_NAME/$NAME.pdf
+  dvipdfmx $NAME.dvi
+  mv $NAME.pdf $SERVR_DIR
 }
 
 checksum() {
   echo `md5sum $NAME.tex`
 }
+
+compile
 
 LATEST=`checksum`
 
