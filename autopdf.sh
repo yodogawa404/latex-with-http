@@ -22,4 +22,5 @@ do
   then
     compile
     echo "compiled!"
+  fi
 done
