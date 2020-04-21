@@ -7,7 +7,7 @@ SERVER_DIR="/server"
 compile() {
   platex $NAME.tex
   dvipdfmx $NAME.dvi
-  mv $NAME.pdf $SERVR_DIR
+  mv $NAME.pdf $SERVER_DIR
 }
 
 checksum() {
