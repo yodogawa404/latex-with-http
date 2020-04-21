@@ -18,7 +18,7 @@ while true;
 do
   sleep 1
   CURRENT=`checksum`
-  if [ $LATEST != $CURRENT ];
+  if [ "$LATEST" != "$CURRENT" ];
   then
     compile
     echo "compiled!"
