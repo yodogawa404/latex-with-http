@@ -1,17 +1,13 @@
 #!/bin/sh
 
-NAME="mnt/doc"
-
-SERVER_DIR="/server"
-
 compile() {
-  platex $NAME.tex
-  dvipdfmx $NAME.dvi
-  mv $NAME.pdf $SERVER_DIR
+  platex mnt/doc.tex
+  dvipdfmx doc.dvi
+  mv doc.pdf /server
 }
 
 checksum() {
-  echo `md5sum $NAME.tex`
+  echo `md5sum mnt/doc.tex`
 }
 
 compile
